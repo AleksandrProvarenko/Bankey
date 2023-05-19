@@ -19,7 +19,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.windowScene = windowScene
         window?.backgroundColor = .systemBackground
 //        window?.rootViewController = LoginViewController()
-        window?.rootViewController = OnboardingContainerViewController()
+//        window?.rootViewController = OnboardingContainerViewController()
+        window?.rootViewController = OnboardingVC()
         window?.makeKeyAndVisible()
     }
 }
