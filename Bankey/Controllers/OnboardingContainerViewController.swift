@@ -10,9 +10,6 @@ import UIKit
 class OnboardingContainerViewController: UIViewController {
     
     let pageViewController: UIPageViewController
-    let vc1 = ViewController1()
-    let vc2 = ViewController2()
-    let vc3 = ViewController3()
     var pages = [UIViewController]()
     var currentVC: UIViewController {
         didSet {
@@ -22,9 +19,9 @@ class OnboardingContainerViewController: UIViewController {
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         self.pageViewController = UIPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
         
-        let page1 = vc1
-        let page2 = vc2
-        let page3 = vc3
+        let page1 = OnboardingVC(imageName: "delorean", titleText: "Bankey is the faster, easier to use, and has a brand new look and feel that will make you feel like you are back in the 80s.")
+        let page2 = OnboardingVC(imageName: "world", titleText: "Move youre monay around the world quickly and securely.")
+        let page3 = OnboardingVC(imageName: "thumbs", titleText: "Learn more at www.bankey.com.")
         
         pages.append(page1)
         pages.append(page2)
@@ -41,7 +38,6 @@ class OnboardingContainerViewController: UIViewController {
     
     override func viewDidLoad() {
             super.viewDidLoad()
-            
             view.backgroundColor = .systemPurple
             
             addChild(pageViewController)
