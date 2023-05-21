@@ -23,19 +23,35 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         loginVC.delegate = self
         onboardingContainerViewController.delegate = self
         
-        window?.rootViewController = onboardingContainerViewController
+        window?.rootViewController = loginVC
         window?.makeKeyAndVisible()
     }
 }
 
 extension SceneDelegate: LoginViewControllerDelegate {
     func didLogin() {
-        print("Did login")
+        setRotViewController(onboardingContainerViewController)
     }
 }
 
 extension SceneDelegate: OnboardingContainerViewControllerDelegate {
     func didFinishOnboarding() {
         print("Did onboard")
+    }
+}
+
+extension SceneDelegate {
+    func setRotViewController(_ vc: UIViewController, animated: Bool = true) {
+        guard animated, let window = self.window else {
+            self.window?.rootViewController = vc
+            self.window?.makeKeyAndVisible()
+            return
+        }
+        
+        window.rootViewController = vc
+        window.makeKeyAndVisible()
+        UIView.transition(with: window, duration: 0.3,
+                          options: .transitionCrossDissolve,
+                          animations: nil)
     }
 }

@@ -13,8 +13,10 @@ protocol OnboardingContainerViewControllerDelegate: AnyObject {
 
 class OnboardingContainerViewController: UIViewController {
     
+// MARK: - Variables
     let pageViewController: UIPageViewController
     var pages = [UIViewController]()
+    
     weak var delegate: OnboardingContainerViewControllerDelegate?
     
     var currentVC: UIViewController {
@@ -94,7 +96,7 @@ class OnboardingContainerViewController: UIViewController {
         closeButton.addTarget(self, action: #selector(closeTapped), for: .primaryActionTriggered)
         
         doneButton.translatesAutoresizingMaskIntoConstraints = false
-        doneButton.setTitle("Back", for: [])
+        doneButton.setTitle("Done", for: [])
         doneButton.addTarget(self, action: #selector(doneTapped), for: .primaryActionTriggered)
     }
     
