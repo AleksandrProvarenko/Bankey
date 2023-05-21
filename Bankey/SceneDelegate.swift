@@ -10,7 +10,8 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     var window: UIWindow?
-    
+    let loginVC  = LoginViewController()
+    let onboardingContainerViewController = OnboardingContainerViewController()
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         
@@ -18,9 +19,23 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
         window?.backgroundColor = .systemBackground
-//        window?.rootViewController = LoginViewController()
-        window?.rootViewController = OnboardingContainerViewController()
-//        window?.rootViewController = OnboardingVC()
+
+        loginVC.delegate = self
+        onboardingContainerViewController.delegate = self
+        
+        window?.rootViewController = onboardingContainerViewController
         window?.makeKeyAndVisible()
+    }
+}
+
+extension SceneDelegate: LoginViewControllerDelegate {
+    func didLogin() {
+        print("Did login")
+    }
+}
+
+extension SceneDelegate: OnboardingContainerViewControllerDelegate {
+    func didFinishOnboarding() {
+        print("Did onboard")
     }
 }
