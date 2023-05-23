@@ -12,6 +12,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
     let loginVC  = LoginViewController()
     let onboardingContainerViewController = OnboardingContainerViewController()
+    let dummyVC = DummyViewController()
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         
@@ -22,21 +23,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         loginVC.delegate = self
         onboardingContainerViewController.delegate = self
+        dummyVC.logoutDelegate = self
         
         window?.rootViewController = loginVC
         window?.makeKeyAndVisible()
-    }
-}
-
-extension SceneDelegate: LoginViewControllerDelegate {
-    func didLogin() {
-        setRotViewController(onboardingContainerViewController)
-    }
-}
-
-extension SceneDelegate: OnboardingContainerViewControllerDelegate {
-    func didFinishOnboarding() {
-        print("Did onboard")
     }
 }
 
@@ -53,5 +43,23 @@ extension SceneDelegate {
         UIView.transition(with: window, duration: 0.3,
                           options: .transitionCrossDissolve,
                           animations: nil)
+    }
+}
+
+extension SceneDelegate: LoginViewControllerDelegate {
+    func didLogin() {
+        setRotViewController(onboardingContainerViewController)
+    }
+}
+
+extension SceneDelegate: OnboardingContainerViewControllerDelegate {
+    func didFinishOnboarding() {
+        setRotViewController(dummyVC)
+    }
+}
+
+extension SceneDelegate: LogoutDelegte {
+    func didLogout() {
+        setRotViewController(loginVC)
     }
 }
