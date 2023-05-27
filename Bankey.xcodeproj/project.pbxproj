@@ -7,10 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B09250A2A200AB1006F4D8C /* UIViewController+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0925092A200AB1006F4D8C /* UIViewController+Util.swift */; };
 		0B23C2672A1C41610040EC71 /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B23C2662A1C41610040EC71 /* DummyViewController.swift */; };
 		0B4D3D432A1D533F00634039 /* LocalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4D3D422A1D533F00634039 /* LocalState.swift */; };
 		0B55226A2A180C8100ABC214 /* OnboardingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5522692A180C8100ABC214 /* OnboardingContainerViewController.swift */; };
 		0B5522742A18164700ABC214 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5522732A18164700ABC214 /* OnboardingVC.swift */; };
+		0B77A1EF2A21479800418526 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B77A1EE2A21479800418526 /* MainViewController.swift */; };
+		0B77A1F12A21495500418526 /* AccountSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B77A1F02A21495500418526 /* AccountSummaryViewController.swift */; };
+		0B77A1F32A21499E00418526 /* MoveMoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B77A1F22A21499E00418526 /* MoveMoneyViewController.swift */; };
+		0B77A1F52A214A8F00418526 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B77A1F42A214A8F00418526 /* MoreViewController.swift */; };
 		0BA79B6D2A141517009C11F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA79B6C2A141517009C11F0 /* AppDelegate.swift */; };
 		0BA79B6F2A141517009C11F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA79B6E2A141517009C11F0 /* SceneDelegate.swift */; };
 		0BA79B712A141517009C11F0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA79B702A141517009C11F0 /* LoginViewController.swift */; };
@@ -20,10 +25,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B0925092A200AB1006F4D8C /* UIViewController+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Util.swift"; sourceTree = "<group>"; };
 		0B23C2662A1C41610040EC71 /* DummyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
 		0B4D3D422A1D533F00634039 /* LocalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalState.swift; sourceTree = "<group>"; };
 		0B5522692A180C8100ABC214 /* OnboardingContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerViewController.swift; sourceTree = "<group>"; };
 		0B5522732A18164700ABC214 /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
+		0B77A1EE2A21479800418526 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		0B77A1F02A21495500418526 /* AccountSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewController.swift; sourceTree = "<group>"; };
+		0B77A1F22A21499E00418526 /* MoveMoneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveMoneyViewController.swift; sourceTree = "<group>"; };
+		0B77A1F42A214A8F00418526 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		0BA79B692A141517009C11F0 /* Bankey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bankey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BA79B6C2A141517009C11F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0BA79B6E2A141517009C11F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,8 +59,20 @@
 			isa = PBXGroup;
 			children = (
 				0B4D3D422A1D533F00634039 /* LocalState.swift */,
+				0B0925092A200AB1006F4D8C /* UIViewController+Util.swift */,
 			);
 			name = Utils;
+			sourceTree = "<group>";
+		};
+		0B77A1F62A219B1A00418526 /* TapBarViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0B77A1EE2A21479800418526 /* MainViewController.swift */,
+				0B77A1F02A21495500418526 /* AccountSummaryViewController.swift */,
+				0B77A1F22A21499E00418526 /* MoveMoneyViewController.swift */,
+				0B77A1F42A214A8F00418526 /* MoreViewController.swift */,
+			);
+			path = TapBarViewControllers;
 			sourceTree = "<group>";
 		};
 		0BA79B602A141517009C11F0 = {
@@ -72,9 +94,9 @@
 		0BA79B6B2A141517009C11F0 /* Bankey */ = {
 			isa = PBXGroup;
 			children = (
-				0B4D3D412A1D532500634039 /* Utils */,
 				0BA79B852A14417F009C11F0 /* Views */,
 				0BA79B812A141A8E009C11F0 /* Controllers */,
+				0B4D3D412A1D532500634039 /* Utils */,
 				0BA79B802A1419BE009C11F0 /* Files */,
 			);
 			path = Bankey;
@@ -95,6 +117,7 @@
 		0BA79B812A141A8E009C11F0 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0B77A1F62A219B1A00418526 /* TapBarViewControllers */,
 				0BA79B702A141517009C11F0 /* LoginViewController.swift */,
 				0B5522692A180C8100ABC214 /* OnboardingContainerViewController.swift */,
 				0B5522732A18164700ABC214 /* OnboardingVC.swift */,
@@ -190,13 +213,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B23C2672A1C41610040EC71 /* DummyViewController.swift in Sources */,
+				0B77A1F52A214A8F00418526 /* MoreViewController.swift in Sources */,
 				0B5522742A18164700ABC214 /* OnboardingVC.swift in Sources */,
 				0BA79B712A141517009C11F0 /* LoginViewController.swift in Sources */,
+				0B77A1F32A21499E00418526 /* MoveMoneyViewController.swift in Sources */,
 				0BA79B6D2A141517009C11F0 /* AppDelegate.swift in Sources */,
+				0B77A1F12A21495500418526 /* AccountSummaryViewController.swift in Sources */,
 				0BA79B832A141ABD009C11F0 /* LoginView.swift in Sources */,
 				0B55226A2A180C8100ABC214 /* OnboardingContainerViewController.swift in Sources */,
+				0B09250A2A200AB1006F4D8C /* UIViewController+Util.swift in Sources */,
 				0BA79B6F2A141517009C11F0 /* SceneDelegate.swift in Sources */,
 				0B4D3D432A1D533F00634039 /* LocalState.swift in Sources */,
+				0B77A1EF2A21479800418526 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
