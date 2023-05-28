@@ -29,8 +29,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         onboardingContainerViewController.delegate = self
         dummyVC.logoutDelegate = self
         
-        window?.rootViewController = mainVC
+        window?.rootViewController = AccountSummaryViewController()
         window?.makeKeyAndVisible()
+        
+        mainVC.selectedIndex = 2
     }
 }
 
