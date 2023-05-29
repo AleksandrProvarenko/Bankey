@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B004EC92A242E7D00FE971C /* AccountSummaryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B004EC82A242E7D00FE971C /* AccountSummaryHeaderView.swift */; };
 		0B09250A2A200AB1006F4D8C /* UIViewController+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0925092A200AB1006F4D8C /* UIViewController+Util.swift */; };
 		0B23C2672A1C41610040EC71 /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B23C2662A1C41610040EC71 /* DummyViewController.swift */; };
+		0B4775C02A25399300646F9D /* AccountSummaryHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B4775BF2A25399300646F9D /* AccountSummaryHeaderView.xib */; };
 		0B4D3D432A1D533F00634039 /* LocalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4D3D422A1D533F00634039 /* LocalState.swift */; };
 		0B55226A2A180C8100ABC214 /* OnboardingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5522692A180C8100ABC214 /* OnboardingContainerViewController.swift */; };
 		0B5522742A18164700ABC214 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5522732A18164700ABC214 /* OnboardingVC.swift */; };
@@ -25,8 +27,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B004EC82A242E7D00FE971C /* AccountSummaryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryHeaderView.swift; sourceTree = "<group>"; };
 		0B0925092A200AB1006F4D8C /* UIViewController+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Util.swift"; sourceTree = "<group>"; };
 		0B23C2662A1C41610040EC71 /* DummyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
+		0B4775BF2A25399300646F9D /* AccountSummaryHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountSummaryHeaderView.xib; sourceTree = "<group>"; };
 		0B4D3D422A1D533F00634039 /* LocalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalState.swift; sourceTree = "<group>"; };
 		0B5522692A180C8100ABC214 /* OnboardingContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerViewController.swift; sourceTree = "<group>"; };
 		0B5522732A18164700ABC214 /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
@@ -55,6 +59,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B004EC72A242E4D00FE971C /* AccountSummaryHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				0B004EC82A242E7D00FE971C /* AccountSummaryHeaderView.swift */,
+				0B4775BF2A25399300646F9D /* AccountSummaryHeaderView.xib */,
+			);
+			name = AccountSummaryHeaderView;
+			sourceTree = "<group>";
+		};
 		0B4D3D412A1D532500634039 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +150,7 @@
 		0BA79B852A14417F009C11F0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0B004EC72A242E4D00FE971C /* AccountSummaryHeaderView */,
 				0BA79B842A14416F009C11F0 /* LoginView */,
 			);
 			name = Views;
@@ -201,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BA79B792A141518009C11F0 /* LaunchScreen.storyboard in Resources */,
+				0B4775C02A25399300646F9D /* AccountSummaryHeaderView.xib in Resources */,
 				0BA79B762A141518009C11F0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,6 +237,7 @@
 				0BA79B832A141ABD009C11F0 /* LoginView.swift in Sources */,
 				0B55226A2A180C8100ABC214 /* OnboardingContainerViewController.swift in Sources */,
 				0B09250A2A200AB1006F4D8C /* UIViewController+Util.swift in Sources */,
+				0B004EC92A242E7D00FE971C /* AccountSummaryHeaderView.swift in Sources */,
 				0BA79B6F2A141517009C11F0 /* SceneDelegate.swift in Sources */,
 				0B4D3D432A1D533F00634039 /* LocalState.swift in Sources */,
 				0B77A1EF2A21479800418526 /* MainViewController.swift in Sources */,
