@@ -56,6 +56,7 @@ extension AccountSummaryViewController {
     }
 }
 
+// MARK: - TableView Delegate and DataSource
 extension AccountSummaryViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return games.count
