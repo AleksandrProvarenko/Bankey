@@ -19,6 +19,7 @@
 		0B77A1F12A21495500418526 /* AccountSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B77A1F02A21495500418526 /* AccountSummaryViewController.swift */; };
 		0B77A1F32A21499E00418526 /* MoveMoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B77A1F22A21499E00418526 /* MoveMoneyViewController.swift */; };
 		0B77A1F52A214A8F00418526 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B77A1F42A214A8F00418526 /* MoreViewController.swift */; };
+		0B7A809B2A27FA2E0072FD81 /* AccountSummaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7A809A2A27FA2E0072FD81 /* AccountSummaryModel.swift */; };
 		0BA79B6D2A141517009C11F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA79B6C2A141517009C11F0 /* AppDelegate.swift */; };
 		0BA79B6F2A141517009C11F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA79B6E2A141517009C11F0 /* SceneDelegate.swift */; };
 		0BA79B712A141517009C11F0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA79B702A141517009C11F0 /* LoginViewController.swift */; };
@@ -40,6 +41,7 @@
 		0B77A1F02A21495500418526 /* AccountSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewController.swift; sourceTree = "<group>"; };
 		0B77A1F22A21499E00418526 /* MoveMoneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveMoneyViewController.swift; sourceTree = "<group>"; };
 		0B77A1F42A214A8F00418526 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		0B7A809A2A27FA2E0072FD81 /* AccountSummaryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryModel.swift; sourceTree = "<group>"; };
 		0BA79B692A141517009C11F0 /* Bankey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bankey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BA79B6C2A141517009C11F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0BA79B6E2A141517009C11F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +93,14 @@
 			path = TapBarViewControllers;
 			sourceTree = "<group>";
 		};
+		0B7A80992A27FA020072FD81 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0B7A809A2A27FA2E0072FD81 /* AccountSummaryModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		0BA79B602A141517009C11F0 = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +120,7 @@
 		0BA79B6B2A141517009C11F0 /* Bankey */ = {
 			isa = PBXGroup;
 			children = (
+				0B7A80992A27FA020072FD81 /* Model */,
 				0BA79B852A14417F009C11F0 /* Views */,
 				0BA79B812A141A8E009C11F0 /* Controllers */,
 				0B4D3D412A1D532500634039 /* Utils */,
@@ -230,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B7A809B2A27FA2E0072FD81 /* AccountSummaryModel.swift in Sources */,
 				0B23C2672A1C41610040EC71 /* DummyViewController.swift in Sources */,
 				0B77A1F52A214A8F00418526 /* MoreViewController.swift in Sources */,
 				0B5522742A18164700ABC214 /* OnboardingVC.swift in Sources */,

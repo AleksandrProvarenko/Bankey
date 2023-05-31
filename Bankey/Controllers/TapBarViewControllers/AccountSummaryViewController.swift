@@ -9,7 +9,7 @@ import UIKit
 
 class AccountSummaryViewController: UIViewController {
     
-    var accounts: [AccountSummaryCell.ViewModel] = []
+    var accounts: [AccountSummaryModel] = []
     let tableView = UITableView()
     
     override func viewDidLoad() {
@@ -81,9 +81,9 @@ extension AccountSummaryViewController: UITableViewDelegate, UITableViewDataSour
 extension AccountSummaryViewController {
     
     private func fetchData() {
-        let savings = AccountSummaryCell.ViewModel(accountType: .Banking, accountName: "Basic Savings")
-        let visa = AccountSummaryCell.ViewModel(accountType: .CreditCard, accountName: "Visa Avion Card")
-        let investment = AccountSummaryCell.ViewModel(accountType: .Investment, accountName: "Tax-Free Saver")
+        let savings = AccountSummaryModel(accounType: .Banking, accountName: "Basic Savings")
+        let visa = AccountSummaryModel(accounType: .CreditCard, accountName: "Visa Avion Card")
+        let investment = AccountSummaryModel(accounType: .Investment, accountName: "Tax-Free Saver")
         
         accounts.append(savings)
         accounts.append(visa)
