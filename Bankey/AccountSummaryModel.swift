@@ -16,4 +16,9 @@ enum AccountType: String {
 struct AccountSummaryModel {
     let accounType: AccountType
     let accountName: String
+    let balance: Decimal
+    
+    var balanceAsAttributeString: NSAttributedString {
+        return CurrencyFormater().makeAttributedCurrency(balance)
+    }
 }

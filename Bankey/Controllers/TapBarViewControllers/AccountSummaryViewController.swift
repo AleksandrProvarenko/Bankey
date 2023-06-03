@@ -28,7 +28,7 @@ extension AccountSummaryViewController {
     
     private func setupTableView() {
         view.addSubview(tableView)
-
+        
         tableView.delegate = self
         tableView.dataSource = self
         
@@ -69,7 +69,7 @@ extension AccountSummaryViewController: UITableViewDelegate, UITableViewDataSour
         
         let account = accounts[indexPath.row]
         cell.configure(with: account)
-    
+        
         return cell
     }
     
@@ -81,12 +81,31 @@ extension AccountSummaryViewController: UITableViewDelegate, UITableViewDataSour
 extension AccountSummaryViewController {
     
     private func fetchData() {
-        let savings = AccountSummaryModel(accounType: .Banking, accountName: "Basic Savings")
-        let visa = AccountSummaryModel(accounType: .CreditCard, accountName: "Visa Avion Card")
-        let investment = AccountSummaryModel(accounType: .Investment, accountName: "Tax-Free Saver")
+        let savings = AccountSummaryModel(accounType: .Banking,
+                                          accountName: "Basic Savings",
+                                          balance: 929466.23)
+        let chequing = AccountSummaryModel(accounType: .Banking,
+                                           accountName: "No-Free All-In Chequing",
+                                           balance: 17562.44)
+        let visa = AccountSummaryModel(accounType: .CreditCard,
+                                       accountName: "Visa Avion Card",
+                                       balance: 412.83)
+        let masterCard = AccountSummaryModel(accounType: .CreditCard,
+                                             accountName: "Student Mastercard",
+                                             balance: 50.83)
+        let investment1 = AccountSummaryModel(accounType: .Investment,
+                                              accountName: "Tax-Free Saver",
+                                              balance: 2000.00)
+        let investment2 = AccountSummaryModel(accounType: .Investment,
+                                              accountName: "Growth Fund",
+                                              balance: 15000.00)
         
         accounts.append(savings)
+        accounts.append(chequing)
         accounts.append(visa)
-        accounts.append(investment)
+        accounts.append(masterCard)
+        accounts.append(investment1)
+        accounts.append(investment2)
+        
     }
 }
