@@ -25,8 +25,9 @@ struct CurrencyFormater {
     private func convertDollar(_ dollarPart: Double) -> String {
         let dollarsWidthDecimal = dollarsFormated(dollarPart)
         
-        let formtter = NumberFormatter()
-        let decimalSeparator = formtter.decimalSeparator!
+        let formatter = NumberFormatter()
+        formatter.locale = Locale(identifier: "en_US")
+        let decimalSeparator = formatter.decimalSeparator!
         let dollarComponents = dollarsWidthDecimal.components(separatedBy: decimalSeparator)
         var dollars = dollarComponents.first!
         dollars.removeFirst()

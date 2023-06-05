@@ -15,7 +15,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     let loginVC  = LoginViewController()
     let onboardingContainerViewController = OnboardingContainerViewController()
-    let dummyVC = DummyViewController()
     let mainVC = MainViewController()
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -24,15 +23,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
         window?.backgroundColor = .systemBackground
+        window?.makeKeyAndVisible()
         
         loginVC.delegate = self
         onboardingContainerViewController.delegate = self
-        dummyVC.logoutDelegate = self
         
-        window?.rootViewController = AccountSummaryViewController()
-        window?.makeKeyAndVisible()
+        let mainVC = mainVC
+        mainVC.setStatusBar()
+
+        UINavigationBar.appearance().isTranslucent = true
+        UINavigationBar.appearance().backgroundColor = appColor
         
-        mainVC.selectedIndex = 2
+        window?.rootViewController = mainVC
+        
     }
 }
 
@@ -55,7 +58,7 @@ extension SceneDelegate {
 extension SceneDelegate: LoginViewControllerDelegate {
     func didLogin() {
         if LocalState.hasOnboarded {
-            setRotViewController(dummyVC)
+            setRotViewController(mainVC)
         } else {
             setRotViewController(onboardingContainerViewController)
         }
@@ -65,7 +68,7 @@ extension SceneDelegate: LoginViewControllerDelegate {
 extension SceneDelegate: OnboardingContainerViewControllerDelegate {
     func didFinishOnboarding() {
         LocalState.hasOnboarded = true
-        setRotViewController(dummyVC)
+        setRotViewController(mainVC)
     }
 }
 
