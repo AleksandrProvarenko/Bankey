@@ -12,7 +12,7 @@ let appColor: UIColor = .systemTeal
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     var window: UIWindow?
-
+    
     let loginVC  = LoginViewController()
     let onboardingContainerViewController = OnboardingContainerViewController()
     let mainVC = MainViewController()
@@ -28,14 +28,26 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         loginVC.delegate = self
         onboardingContainerViewController.delegate = self
         
-        let mainVC = mainVC
+        displayLogin()
+    }
+    
+    private func displayLogin() {
+        setRotViewController(loginVC)
+    }
+    
+    private func displayNextScreen() {
+        if LocalState.hasOnboarded {
+            prepMainView()
+            setRotViewController(mainVC)
+        } else {
+            setRotViewController(onboardingContainerViewController)
+        }
+    }
+    
+    private func prepMainView() {
         mainVC.setStatusBar()
-
         UINavigationBar.appearance().isTranslucent = true
         UINavigationBar.appearance().backgroundColor = appColor
-        
-        window?.rootViewController = mainVC
-        
     }
 }
 
@@ -57,17 +69,13 @@ extension SceneDelegate {
 
 extension SceneDelegate: LoginViewControllerDelegate {
     func didLogin() {
-        if LocalState.hasOnboarded {
-            setRotViewController(mainVC)
-        } else {
-            setRotViewController(onboardingContainerViewController)
-        }
-    }
+        displayNextScreen()    }
 }
 
 extension SceneDelegate: OnboardingContainerViewControllerDelegate {
     func didFinishOnboarding() {
         LocalState.hasOnboarded = true
+        prepMainView()
         setRotViewController(mainVC)
     }
 }
