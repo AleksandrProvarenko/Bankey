@@ -7,7 +7,7 @@
 
 import UIKit
 
-struct CurrencyFormater {
+struct CurrencyFormatter {
     
     func makeAttributedCurrency(_ ammount: Decimal) -> NSMutableAttributedString {
         let tuple = breakIntoDollarsAndCents(ammount)

@@ -19,6 +19,6 @@ struct AccountSummaryModel {
     let balance: Decimal
     
     var balanceAsAttributeString: NSAttributedString {
-        return CurrencyFormater().makeAttributedCurrency(balance)
+        return CurrencyFormatter().makeAttributedCurrency(balance)
     }
 }

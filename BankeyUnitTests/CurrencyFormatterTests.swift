@@ -11,11 +11,11 @@ import XCTest
 @testable import Bankey
 
 class Test: XCTestCase {
-    var formatter: CurrencyFormater!
+    var formatter: CurrencyFormatter!
     
     override func setUp() {
         super.setUp()
-        formatter = CurrencyFormater()
+        formatter = CurrencyFormatter()
     }
     
     func testBreakDollarsIntoCents() throws {
