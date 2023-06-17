@@ -31,6 +31,8 @@
 		0BA79B762A141518009C11F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BA79B752A141518009C11F0 /* Assets.xcassets */; };
 		0BA79B792A141518009C11F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BA79B772A141518009C11F0 /* LaunchScreen.storyboard */; };
 		0BA79B832A141ABD009C11F0 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA79B822A141ABD009C11F0 /* LoginView.swift */; };
+		0BAF06132A3E6DE000FC6CF0 /* AccountSummaryHeaderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAF06122A3E6DE000FC6CF0 /* AccountSummaryHeaderModel.swift */; };
+		0BAF06162A3E71AA00FC6CF0 /* AccountSummaryViewController+Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAF06152A3E71AA00FC6CF0 /* AccountSummaryViewController+Networking.swift */; };
 		0BAFFDD52A2E7DD20060B551 /* CurrencyFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAFFDD42A2E7DD20060B551 /* CurrencyFormatterTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +73,8 @@
 		0BA79B782A141518009C11F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0BA79B7A2A141518009C11F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0BA79B822A141ABD009C11F0 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		0BAF06122A3E6DE000FC6CF0 /* AccountSummaryHeaderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryHeaderModel.swift; sourceTree = "<group>"; };
+		0BAF06152A3E71AA00FC6CF0 /* AccountSummaryViewController+Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountSummaryViewController+Networking.swift"; sourceTree = "<group>"; };
 		0BAFFDCB2A2E7C700060B551 /* BankeyUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankeyUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BAFFDD42A2E7DD20060B551 /* CurrencyFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -132,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				0B7A809A2A27FA2E0072FD81 /* AccountSummaryModel.swift */,
+				0BAF06122A3E6DE000FC6CF0 /* AccountSummaryHeaderModel.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -160,6 +165,7 @@
 				0B7A80992A27FA020072FD81 /* Model */,
 				0BA79B852A14417F009C11F0 /* Views */,
 				0BA79B812A141A8E009C11F0 /* Controllers */,
+				0BAF06142A3E714F00FC6CF0 /* Networking */,
 				0B4D3D412A1D532500634039 /* Utils */,
 				0BA79B802A1419BE009C11F0 /* Files */,
 			);
@@ -205,6 +211,14 @@
 				0BA79B842A14416F009C11F0 /* LoginView */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		0BAF06142A3E714F00FC6CF0 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				0BAF06152A3E71AA00FC6CF0 /* AccountSummaryViewController+Networking.swift */,
+			);
+			name = Networking;
 			sourceTree = "<group>";
 		};
 		0BAFFDCC2A2E7C700060B551 /* BankeyUnitTests */ = {
@@ -319,6 +333,7 @@
 				0B8C0D832A329EEF0010E309 /* UITextField+SecureToggle.swift in Sources */,
 				0B8C0D812A329B900010E309 /* NSNotificationName.swift in Sources */,
 				0B5154092A293EAF0029DD2A /* DecimalUtils.swift in Sources */,
+				0BAF06132A3E6DE000FC6CF0 /* AccountSummaryHeaderModel.swift in Sources */,
 				0B7A809B2A27FA2E0072FD81 /* AccountSummaryModel.swift in Sources */,
 				0B23C2672A1C41610040EC71 /* DummyViewController.swift in Sources */,
 				0B51540B2A29417F0029DD2A /* CurrencyFormatter.swift in Sources */,
@@ -326,6 +341,7 @@
 				0B5522742A18164700ABC214 /* OnboardingVC.swift in Sources */,
 				0B117B972A3A5E9E00524BF4 /* ShakeyBellView.swift in Sources */,
 				0BA79B712A141517009C11F0 /* LoginViewController.swift in Sources */,
+				0BAF06162A3E71AA00FC6CF0 /* AccountSummaryViewController+Networking.swift in Sources */,
 				0B77A1F32A21499E00418526 /* MoveMoneyViewController.swift in Sources */,
 				0BA79B6D2A141517009C11F0 /* AppDelegate.swift in Sources */,
 				0B3D2A6C2A256DF400E188CC /* AccountSummaryCell.swift in Sources */,
