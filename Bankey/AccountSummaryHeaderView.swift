@@ -15,7 +15,6 @@ class AccountSummaryHeaderView: UIView {
     @IBOutlet weak var dateLabel: UILabel!
     
     let shakeyBellView = ShakeyBellView()
-    let model = AccountSummaryModel.self
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -57,8 +56,8 @@ class AccountSummaryHeaderView: UIView {
     }
     
     func configure(model: headerModel) {
-        welcomeLabel.text = model.welcomeMessage
-        nameLabel.text = model.name
-        dateLabel.text = model.dateFormater
+            welcomeLabel.text = model.welcomeMessage
+            nameLabel.text = model.name
+            dateLabel.text = model.dateFormater
+        }
     }
-}

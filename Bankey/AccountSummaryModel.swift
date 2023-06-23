@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum AccountType: String {
+enum AccountType: String, Codable {
     case Banking
     case CreditCard
     case Investment

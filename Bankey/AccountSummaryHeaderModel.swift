@@ -21,7 +21,7 @@ struct headerModel {
 extension Date {
     static var bankeyDateFormater: DateFormatter {
         let formater = DateFormatter()
-        formater.timeZone = TimeZone(abbreviation: "MDT")
+        formater.timeZone = TimeZone(abbreviation: "EET")
         return formater
     }
     
