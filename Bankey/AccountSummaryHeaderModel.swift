@@ -14,7 +14,7 @@ struct headerModel {
     let date: Date
     
     var dateFormater: String {
-        return date.monthDayYearString
+        return date.monthDayYearString.capitalized
     }
 }
 
