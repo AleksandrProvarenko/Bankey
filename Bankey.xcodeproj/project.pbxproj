@@ -16,6 +16,7 @@
 		0B3D2A6C2A256DF400E188CC /* AccountSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3D2A6B2A256DF400E188CC /* AccountSummaryCell.swift */; };
 		0B4775C02A25399300646F9D /* AccountSummaryHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B4775BF2A25399300646F9D /* AccountSummaryHeaderView.xib */; };
 		0B4D3D432A1D533F00634039 /* LocalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4D3D422A1D533F00634039 /* LocalState.swift */; };
+		0B4D6EB02A47C30E0013E7E9 /* SkeletonLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4D6EAF2A47C30E0013E7E9 /* SkeletonLoadable.swift */; };
 		0B5154092A293EAF0029DD2A /* DecimalUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5154082A293EAF0029DD2A /* DecimalUtils.swift */; };
 		0B51540B2A29417F0029DD2A /* CurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B51540A2A29417F0029DD2A /* CurrencyFormatter.swift */; };
 		0B55226A2A180C8100ABC214 /* OnboardingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5522692A180C8100ABC214 /* OnboardingContainerViewController.swift */; };
@@ -25,6 +26,7 @@
 		0B77A1F32A21499E00418526 /* MoveMoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B77A1F22A21499E00418526 /* MoveMoneyViewController.swift */; };
 		0B77A1F52A214A8F00418526 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B77A1F42A214A8F00418526 /* MoreViewController.swift */; };
 		0B7A809B2A27FA2E0072FD81 /* AccountSummaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7A809A2A27FA2E0072FD81 /* AccountSummaryModel.swift */; };
+		0B7DC37C2A4A4DA5003784FE /* SkeletonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7DC37B2A4A4DA5003784FE /* SkeletonCell.swift */; };
 		0B8C0D812A329B900010E309 /* NSNotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8C0D802A329B900010E309 /* NSNotificationName.swift */; };
 		0B8C0D832A329EEF0010E309 /* UITextField+SecureToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8C0D822A329EEF0010E309 /* UITextField+SecureToggle.swift */; };
 		0BA79B6D2A141517009C11F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA79B6C2A141517009C11F0 /* AppDelegate.swift */; };
@@ -58,6 +60,7 @@
 		0B3D2A6B2A256DF400E188CC /* AccountSummaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryCell.swift; sourceTree = "<group>"; };
 		0B4775BF2A25399300646F9D /* AccountSummaryHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountSummaryHeaderView.xib; sourceTree = "<group>"; };
 		0B4D3D422A1D533F00634039 /* LocalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalState.swift; sourceTree = "<group>"; };
+		0B4D6EAF2A47C30E0013E7E9 /* SkeletonLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonLoadable.swift; sourceTree = "<group>"; };
 		0B5154082A293EAF0029DD2A /* DecimalUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecimalUtils.swift; sourceTree = "<group>"; };
 		0B51540A2A29417F0029DD2A /* CurrencyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatter.swift; sourceTree = "<group>"; };
 		0B5522692A180C8100ABC214 /* OnboardingContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +70,7 @@
 		0B77A1F22A21499E00418526 /* MoveMoneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveMoneyViewController.swift; sourceTree = "<group>"; };
 		0B77A1F42A214A8F00418526 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		0B7A809A2A27FA2E0072FD81 /* AccountSummaryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryModel.swift; sourceTree = "<group>"; };
+		0B7DC37B2A4A4DA5003784FE /* SkeletonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonCell.swift; sourceTree = "<group>"; };
 		0B8C0D802A329B900010E309 /* NSNotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSNotificationName.swift; sourceTree = "<group>"; };
 		0B8C0D822A329EEF0010E309 /* UITextField+SecureToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+SecureToggle.swift"; sourceTree = "<group>"; };
 		0BA79B692A141517009C11F0 /* Bankey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bankey.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,6 +166,15 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		0B7DC37A2A4A4D49003784FE /* SceletonLodable */ = {
+			isa = PBXGroup;
+			children = (
+				0B4D6EAF2A47C30E0013E7E9 /* SkeletonLoadable.swift */,
+				0B7DC37B2A4A4DA5003784FE /* SkeletonCell.swift */,
+			);
+			name = SceletonLodable;
+			sourceTree = "<group>";
+		};
 		0BA79B602A141517009C11F0 = {
 			isa = PBXGroup;
 			children = (
@@ -230,6 +243,7 @@
 			children = (
 				0B004EC72A242E4D00FE971C /* AccountSummaryHeaderView */,
 				0BA79B842A14416F009C11F0 /* LoginView */,
+				0B7DC37A2A4A4D49003784FE /* SceletonLodable */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -357,9 +371,11 @@
 				0B5154092A293EAF0029DD2A /* DecimalUtils.swift in Sources */,
 				0BAF06132A3E6DE000FC6CF0 /* AccountSummaryHeaderModel.swift in Sources */,
 				0B7A809B2A27FA2E0072FD81 /* AccountSummaryModel.swift in Sources */,
+				0B7DC37C2A4A4DA5003784FE /* SkeletonCell.swift in Sources */,
 				0B23C2672A1C41610040EC71 /* DummyViewController.swift in Sources */,
 				0B51540B2A29417F0029DD2A /* CurrencyFormatter.swift in Sources */,
 				0B77A1F52A214A8F00418526 /* MoreViewController.swift in Sources */,
+				0B4D6EB02A47C30E0013E7E9 /* SkeletonLoadable.swift in Sources */,
 				0B5522742A18164700ABC214 /* OnboardingVC.swift in Sources */,
 				0B117B972A3A5E9E00524BF4 /* ShakeyBellView.swift in Sources */,
 				0BA79B712A141517009C11F0 /* LoginViewController.swift in Sources */,
