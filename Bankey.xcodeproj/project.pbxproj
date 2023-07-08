@@ -21,6 +21,8 @@
 		0B51540B2A29417F0029DD2A /* CurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B51540A2A29417F0029DD2A /* CurrencyFormatter.swift */; };
 		0B55226A2A180C8100ABC214 /* OnboardingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5522692A180C8100ABC214 /* OnboardingContainerViewController.swift */; };
 		0B5522742A18164700ABC214 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5522732A18164700ABC214 /* OnboardingVC.swift */; };
+		0B6CC4382A4BA92C0064C8B7 /* ProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6CC4372A4BA92C0064C8B7 /* ProfileManager.swift */; };
+		0B6CC43A2A4BAC5F0064C8B7 /* AccountSummaryVCTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6CC4392A4BAC5F0064C8B7 /* AccountSummaryVCTest.swift */; };
 		0B77A1EF2A21479800418526 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B77A1EE2A21479800418526 /* MainViewController.swift */; };
 		0B77A1F12A21495500418526 /* AccountSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B77A1F02A21495500418526 /* AccountSummaryViewController.swift */; };
 		0B77A1F32A21499E00418526 /* MoveMoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B77A1F22A21499E00418526 /* MoveMoneyViewController.swift */; };
@@ -65,6 +67,8 @@
 		0B51540A2A29417F0029DD2A /* CurrencyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatter.swift; sourceTree = "<group>"; };
 		0B5522692A180C8100ABC214 /* OnboardingContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerViewController.swift; sourceTree = "<group>"; };
 		0B5522732A18164700ABC214 /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
+		0B6CC4372A4BA92C0064C8B7 /* ProfileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileManager.swift; sourceTree = "<group>"; };
+		0B6CC4392A4BAC5F0064C8B7 /* AccountSummaryVCTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryVCTest.swift; sourceTree = "<group>"; };
 		0B77A1EE2A21479800418526 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		0B77A1F02A21495500418526 /* AccountSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewController.swift; sourceTree = "<group>"; };
 		0B77A1F22A21499E00418526 /* MoveMoneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveMoneyViewController.swift; sourceTree = "<group>"; };
@@ -129,6 +133,7 @@
 			children = (
 				0B1581652A465E8E00BC76AE /* ProfileTest.swift */,
 				0B1581672A4661C400BC76AE /* AccountTest.swift */,
+				0B6CC4392A4BAC5F0064C8B7 /* AccountSummaryVCTest.swift */,
 			);
 			path = AccountSummary;
 			sourceTree = "<group>";
@@ -144,6 +149,14 @@
 				0B8C0D802A329B900010E309 /* NSNotificationName.swift */,
 			);
 			name = Utils;
+			sourceTree = "<group>";
+		};
+		0B6CC4362A4BA9080064C8B7 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				0B6CC4372A4BA92C0064C8B7 /* ProfileManager.swift */,
+			);
+			name = Managers;
 			sourceTree = "<group>";
 		};
 		0B77A1F62A219B1A00418526 /* TapBarViewControllers */ = {
@@ -200,6 +213,7 @@
 				0BA79B852A14417F009C11F0 /* Views */,
 				0BA79B812A141A8E009C11F0 /* Controllers */,
 				0BAF06142A3E714F00FC6CF0 /* Networking */,
+				0B6CC4362A4BA9080064C8B7 /* Managers */,
 				0B4D3D412A1D532500634039 /* Utils */,
 				0BA79B802A1419BE009C11F0 /* Files */,
 			);
@@ -389,6 +403,7 @@
 				0B09250A2A200AB1006F4D8C /* UIViewController+Util.swift in Sources */,
 				0B004EC92A242E7D00FE971C /* AccountSummaryHeaderView.swift in Sources */,
 				0BA79B6F2A141517009C11F0 /* SceneDelegate.swift in Sources */,
+				0B6CC4382A4BA92C0064C8B7 /* ProfileManager.swift in Sources */,
 				0B4D3D432A1D533F00634039 /* LocalState.swift in Sources */,
 				0B77A1EF2A21479800418526 /* MainViewController.swift in Sources */,
 			);
@@ -399,6 +414,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BAFFDD52A2E7DD20060B551 /* CurrencyFormatterTests.swift in Sources */,
+				0B6CC43A2A4BAC5F0064C8B7 /* AccountSummaryVCTest.swift in Sources */,
 				0B1581682A4661C400BC76AE /* AccountTest.swift in Sources */,
 				0B1581662A465E8E00BC76AE /* ProfileTest.swift in Sources */,
 			);
